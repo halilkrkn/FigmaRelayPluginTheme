@@ -1,0 +1,178 @@
+{
+  "name": "action_button",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "NdlSUcIYY9GgAJ83w5ppYi",
+    "node": "1:13",
+    "version": "2931222953",
+    "component-id": "c30e474125057762f73e9388c827812f65ebca03"
+  },
+  "default": "Primary",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "text",
+        "id": "text"
+      }
+    ],
+    "modes": {
+      "Primary": {
+        "rules": [
+          {
+            "id": "top_level",
+            "padding": {
+              "left": "50.0",
+              "top": "7.0",
+              "right": "50.0",
+              "bottom": "7.0"
+            },
+            "border-radius": "85.0",
+            "tap-handler": "$onClick",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "stroke-width": "2.0",
+            "stroke-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "arrangement": "row",
+            "children": [
+              "text"
+            ],
+            "item-spacing": "10.0",
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "331.3953488372093",
+              "saturation": "0.4056603773584906",
+              "value": "0.8313725490196079"
+            },
+            "clip-content": "false"
+          },
+          {
+            "id": "text",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "$text",
+            "overflow": "visible",
+            "text-align-vertical": "center",
+            "text-size": "24.0",
+            "line-height": "1.2569999694824219",
+            "typeface": "Source Code Pro"
+          }
+        ]
+      },
+      "Secondary": {
+        "rules": [
+          {
+            "id": "top_level",
+            "padding": {
+              "left": "51.0",
+              "top": "7.0",
+              "right": "51.0",
+              "bottom": "7.0"
+            },
+            "border-radius": "85.0",
+            "tap-handler": "$onClick",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "stroke-width": "2.0",
+            "stroke-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "arrangement": "row",
+            "children": [
+              "text"
+            ],
+            "item-spacing": "10.0",
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "158.5263157894737",
+              "saturation": "0.5688622754491018",
+              "value": "0.6549019607843137"
+            },
+            "clip-content": "false"
+          },
+          {
+            "id": "text",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "$text",
+            "overflow": "visible",
+            "text-align-vertical": "center",
+            "text-size": "24.0",
+            "line-height": "1.2569999694824219",
+            "typeface": "Source Code Pro"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "onClick": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "text": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "Primary",
+      "size": {
+        "width": 273.0,
+        "height": 44.0
+      },
+      "parameters": {
+        "text": "Hello World!"
+      }
+    },
+    {
+      "design": "Secondary",
+      "size": {
+        "width": 275.0,
+        "height": 44.0
+      },
+      "parameters": {
+        "text": "Hello World!"
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}
