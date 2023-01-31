@@ -1,0 +1,309 @@
+{
+  "name": "social_media",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "NdlSUcIYY9GgAJ83w5ppYi",
+    "node": "6:55",
+    "version": "2945862556",
+    "component-id": "cece7a767c128ca35ede830c38188d43fed5cfe1"
+  },
+  "default": "Facebook",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "image",
+        "id": "iconFacebook"
+      },
+      {
+        "type": "text",
+        "id": "facebook"
+      },
+      {
+        "type": "image",
+        "id": "iconGoogle"
+      },
+      {
+        "type": "text",
+        "id": "google"
+      },
+      {
+        "type": "image",
+        "id": "iconLinkedin"
+      },
+      {
+        "type": "text",
+        "id": "linkedin"
+      }
+    ],
+    "modes": {
+      "Facebook": {
+        "rules": [
+          {
+            "id": "top_level",
+            "tap-handler": "$onClick",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "children": [
+              "iconFacebook",
+              "facebook"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "iconFacebook",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "70.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "70.0"
+              }
+            },
+            "image-content": "$icon",
+            "scale": "cover"
+          },
+          {
+            "id": "facebook",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "79.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "21.0"
+              }
+            },
+            "font-weight": "600.0",
+            "color": "$textColor",
+            "text-content": "$text",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "16.0",
+            "line-height": "1.2569999694824219",
+            "typeface": "Source Code Pro"
+          }
+        ]
+      },
+      "Google": {
+        "rules": [
+          {
+            "id": "top_level",
+            "tap-handler": "$onClick",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "children": [
+              "iconGoogle",
+              "google"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "iconGoogle",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "70.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "70.0"
+              }
+            },
+            "image-content": "icon_google.png",
+            "scale": "cover"
+          },
+          {
+            "id": "google",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "79.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "21.0"
+              }
+            },
+            "font-weight": "600.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Google",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "16.0",
+            "line-height": "1.2569999694824219",
+            "typeface": "Source Code Pro"
+          }
+        ]
+      },
+      "Linkedin": {
+        "rules": [
+          {
+            "id": "top_level",
+            "tap-handler": "$onClick",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "children": [
+              "iconLinkedin",
+              "linkedin"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "iconLinkedin",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "70.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "70.0"
+              }
+            },
+            "image-content": "icon_linkedin.png",
+            "scale": "cover"
+          },
+          {
+            "id": "linkedin",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "79.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "21.0"
+              }
+            },
+            "font-weight": "600.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Linkedin",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "16.0",
+            "line-height": "1.2569999694824219",
+            "typeface": "Source Code Pro"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "onClick": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "icon": {
+      "data-type": "image",
+      "required": false,
+      "description": ""
+    },
+    "text": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "textColor": {
+      "data-type": "color",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "Facebook",
+      "size": {
+        "width": 79.0,
+        "height": 91.0
+      },
+      "parameters": {
+        "icon": "icon_facebook.png",
+        "text": "Facebook",
+        "textColor": {
+          "alpha": "1.0",
+          "hue": "0.0",
+          "saturation": "0.0",
+          "value": "0.0"
+        }
+      }
+    },
+    {
+      "design": "Google",
+      "size": {
+        "width": 79.0,
+        "height": 91.0
+      },
+      "parameters": {
+        "icon": "icon_facebook.png",
+        "text": "Facebook",
+        "textColor": {
+          "alpha": "1.0",
+          "hue": "0.0",
+          "saturation": "0.0",
+          "value": "0.0"
+        }
+      }
+    },
+    {
+      "design": "Linkedin",
+      "size": {
+        "width": 79.0,
+        "height": 91.0
+      },
+      "parameters": {
+        "icon": "icon_facebook.png",
+        "text": "Facebook",
+        "textColor": {
+          "alpha": "1.0",
+          "hue": "0.0",
+          "saturation": "0.0",
+          "value": "0.0"
+        }
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}
