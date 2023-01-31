@@ -1,0 +1,103 @@
+{
+  "name": "hello_relay",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "NdlSUcIYY9GgAJ83w5ppYi",
+    "node": "6:82",
+    "version": "2945862556",
+    "component-id": "1d6c66ed48438e67211a3dc3ad91f67abb44211b"
+  },
+  "default": "Relay",
+  "documentation": "HelloRelay Component'i ve Parametreleri\n- text\n- textColor \n",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "text",
+        "id": "Text"
+      }
+    ],
+    "modes": {
+      "Relay": {
+        "rules": [
+          {
+            "id": "top_level",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "children": [
+              "Text"
+            ],
+            "item-spacing": "10.0",
+            "clip-content": "false"
+          },
+          {
+            "id": "Text",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "341.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "600.0",
+            "color": "$textColor",
+            "text-content": "$text",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-align-vertical": "center",
+            "text-size": "24.0",
+            "line-height": "1.2569999694824219",
+            "typeface": "Source Code Pro"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "text": {
+      "data-type": "text",
+      "required": false,
+      "description": "Title'ın text'ini değiştirir."
+    },
+    "textColor": {
+      "data-type": "color",
+      "required": false,
+      "description": "Title'ın rengini değiştirir."
+    }
+  },
+  "previews": [
+    {
+      "design": "Relay",
+      "size": {
+        "width": 341.0,
+        "height": 30.0
+      },
+      "parameters": {
+        "text": "Selam Ben Relay!",
+        "textColor": {
+          "alpha": "1.0",
+          "hue": "0.0",
+          "saturation": "0.0",
+          "value": "0.0"
+        }
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

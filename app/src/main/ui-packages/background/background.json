@@ -1,0 +1,127 @@
+{
+  "name": "background",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "NdlSUcIYY9GgAJ83w5ppYi",
+    "node": "7:8",
+    "version": "2945862556",
+    "component-id": "1c19b0d2283a4ec3af6ac2e0cbc6f34b7cfc3e65"
+  },
+  "default": "background",
+  "documentation": "Background Component'i ve Parametreleri\n",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "image",
+        "id": "backgroundImage"
+      },
+      {
+        "type": "text",
+        "id": "Hello Jetpack Compose"
+      }
+    ],
+    "modes": {
+      "background": {
+        "rules": [
+          {
+            "id": "top_level",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "children": [
+              "backgroundImage",
+              "Hello Jetpack Compose"
+            ],
+            "item-spacing": "3.0",
+            "clip-content": "false"
+          },
+          {
+            "id": "backgroundImage",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "306.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "131.0"
+              }
+            },
+            "image-content": "background_image.jpeg",
+            "scale": "cover"
+          },
+          {
+            "id": "Hello Jetpack Compose",
+            "tap-handler": "$onClickText",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "261.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "600.0",
+            "color": "$textColor",
+            "text-content": "$text",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "20.0",
+            "line-height": "1.2569999694824219",
+            "typeface": "Source Code Pro"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "text": {
+      "data-type": "text",
+      "required": false,
+      "description": "background Title Text"
+    },
+    "textColor": {
+      "data-type": "color",
+      "required": false,
+      "description": "Backgorund Text Color"
+    },
+    "onClickText": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "background",
+      "size": {
+        "width": 306.0,
+        "height": 159.0
+      },
+      "parameters": {
+        "text": "Hello Jetpack Compose",
+        "textColor": {
+          "alpha": "1.0",
+          "hue": "0.0",
+          "saturation": "0.0",
+          "value": "0.0"
+        }
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}
